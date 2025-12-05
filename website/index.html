@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pixel Art Studio — Precision Pixel Editor</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="nav">
+    <div class="logo">Pixel Art Studio</div>
+    <nav>
+      <a href="#hero">Home</a>
+      <a href="#features">Features</a>
+      <a href="#workflow">Workflow</a>
+      <a href="#download">Download</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="btn ghost" href="#download">Get the EXE</a>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="hero__content">
+        <p class="eyebrow">Version 5.1.0 · Built with PyQt6</p>
+        <h1>Paint perfect pixels with pro-grade controls.</h1>
+        <p class="lede">A focused pixel art workstation with per-tool brushes, symmetry, layers, exports, and buttery-smooth zoom for crisp, accurate edits.</p>
+        <div class="cta-row">
+          <a class="btn" href="#download">Download for Windows</a>
+          <a class="btn ghost" href="#workflow">See the workflow</a>
+        </div>
+        <div class="hero__chips">
+          <span>One-file EXE</span>
+          <span>Layered editing</span>
+          <span>Symmetry modes</span>
+          <span>PNG export</span>
+        </div>
+      </div>
+      <div class="hero__card">
+        <div class="glass">
+          <div class="card__header">
+            <div class="dot red"></div><div class="dot amber"></div><div class="dot green"></div>
+            <span>pixel_art_studio.py</span>
+          </div>
+          <div class="card__body">
+            <div class="stat">
+              <small>Zoom</small>
+              <strong>Up to 256×</strong>
+              <p>Lag-free pixel-perfect navigation.</p>
+            </div>
+            <div class="stat">
+              <small>Per-tool memory</small>
+              <strong>Brush + Eraser</strong>
+              <p>Independent sizes with smooth transitions.</p>
+            </div>
+            <div class="stat">
+              <small>Export</small>
+              <strong>PNG @ Scale</strong>
+              <p>Fast, single-file export at any factor.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section features">
+      <div class="section__header">
+        <p class="eyebrow">Why artists love it</p>
+        <h2>Built for precision, speed, and clarity.</h2>
+        <p class="lede">Every control is tuned for pixel art: tight grid overlays, symmetry mirrors, flow-aware brushes, and quick layer ops.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature">
+          <h3>Per-tool brush memory</h3>
+          <p>Each tool remembers its own size, opacity, flow, and hardness. Swap tools and the sliders glide to the saved values.</p>
+        </article>
+        <article class="feature">
+          <h3>Layer system</h3>
+          <p>Add, reorder, duplicate, merge, flatten—fast. Individual opacity controls and visibility toggles keep stacks clean.</p>
+        </article>
+        <article class="feature">
+          <h3>Symmetry modes</h3>
+          <p>Horizontal, vertical, or both. Mirror strokes automatically for balanced sprites and UI assets.</p>
+        </article>
+        <article class="feature">
+          <h3>Snappy zoom & pan</h3>
+          <p>Scroll to zoom up to 256× with smart clipping for low-lag redraws. Middle-drag to pan smoothly.</p>
+        </article>
+        <article class="feature">
+          <h3>Precision shapes</h3>
+          <p>Lines, rectangles, and circles with live previews. Switch to fill for instant region recolors.</p>
+        </article>
+        <article class="feature">
+          <h3>Export ready</h3>
+          <p>PNG export with scale multiplier. Keep transparency; no artifacts. Ideal for spritesheets and UI icons.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="workflow" class="section workflow">
+      <div class="section__header">
+        <p class="eyebrow">3-step flow</p>
+        <h2>From sketch to export in minutes.</h2>
+      </div>
+      <div class="timeline">
+        <div class="step">
+          <span class="badge">01</span>
+          <h3>Block in shapes</h3>
+          <p>Use Pencil and Line with symmetry to rough out silhouettes. Grid overlay keeps alignment sharp.</p>
+        </div>
+        <div class="step">
+          <span class="badge">02</span>
+          <h3>Detail & shade</h3>
+          <p>Switch tools—each recalls its own brush profile—so you can refine edges and erase confidently.</p>
+        </div>
+        <div class="step">
+          <span class="badge">03</span>
+          <h3>Export at scale</h3>
+          <p>Pick your scale factor and export PNG. Layers stay intact in project saves; exports stay crisp.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="download" class="section download">
+      <div class="download__card glass">
+        <div>
+          <p class="eyebrow">Get the app</p>
+          <h2>Pixel Art Studio for Windows</h2>
+          <p class="lede">One-file EXE, no installer. Keep it portable—just launch and create.</p>
+          <div class="meta">
+            <span>Size: depends on build</span>
+            <span>Format: Portable EXE</span>
+            <span>OS: Windows 10/11</span>
+          </div>
+        </div>
+        <div class="download__actions">
+          <a class="btn" href="./pixel_art_studio.exe" download>Download EXE</a>
+          <small>Place your built EXE here as <code>pixel_art_studio.exe</code> to activate the button.</small>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section faq">
+      <div class="section__header">
+        <p class="eyebrow">Quick answers</p>
+        <h2>FAQ</h2>
+      </div>
+      <div class="faq__grid">
+        <div class="faq__item">
+          <h3>Does it support layers?</h3>
+          <p>Yes. Add, reorder, duplicate, merge down, and flatten with opacity per layer.</p>
+        </div>
+        <div class="faq__item">
+          <h3>Can I change brush settings per tool?</h3>
+          <p>Each tool remembers its own size, opacity, flow, and hardness—restored with smooth slider transitions.</p>
+        </div>
+        <div class="faq__item">
+          <h3>How do I export?</h3>
+          <p>Use Export PNG, set a scale factor, and save. Transparency is preserved.</p>
+        </div>
+        <div class="faq__item">
+          <h3>What about symmetry?</h3>
+          <p>Horizontal, vertical, or both—ideal for character sprites and UI elements.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>Pixel Art Studio · Crafted for precise pixel workflows.</div>
+    <div class="footer__links">
+      <a href="#hero">Top</a>
+      <a href="#download">Download</a>
+      <a href="#faq">FAQ</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
