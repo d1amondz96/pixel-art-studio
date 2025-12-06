@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pixel Art Studio — Professional Pixel Art Editor</title>
+  <meta name="description" content="Pixel Art Studio — a professional pixel editor with per-tool brushes, symmetry, layers, and instant PNG export." />
+  <meta property="og:title" content="Pixel Art Studio — Professional Pixel Art Editor" />
+  <meta property="og:description" content="Per-tool brushes, symmetry modes, layers, crisp zoom, and one-file PNG export." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/icon.ico" />
+  <meta property="og:url" content="/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Pixel Art Studio" />
+  <meta name="twitter:description" content="Professional pixel art editor with per-tool brushes, symmetry, and PNG export." />
+  <meta name="twitter:image" content="/icon.ico" />
+  <meta name="theme-color" content="#7c3aed" />
+  <link rel="icon" href="/icon.ico?v=2" sizes="any" />
+  <link rel="apple-touch-icon" href="/icon.ico?v=2" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="cursor-glow"></div>
+  <div class="grid-bg"></div>
+  
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="#" class="logo">
+        <div class="logo-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="3" width="7" height="7" rx="1"/>
+            <rect x="14" y="3" width="7" height="7" rx="1"/>
+            <rect x="3" y="14" width="7" height="7" rx="1"/>
+            <rect x="14" y="14" width="7" height="7" rx="1"/>
+          </svg>
+        </div>
+        <span>Pixel Art Studio</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#workflow">Workflow</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="btn btn-nav" href="#download">
+        <span>Download</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+          <polyline points="7 10 12 15 17 10"/>
+          <line x1="12" y1="15" x2="12" y2="3"/>
+        </svg>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="hero-glow"></div>
+      <div class="hero-content">
+        <div class="badge animate-in">
+          <span class="pulse"></span>
+          <span>Version 5.1.0</span>
+          <span class="divider"></span>
+          <span>Now Available</span>
+        </div>
+        <h1 class="animate-in delay-1">
+          Create stunning<br/>
+          <span class="gradient-text">pixel art</span> with ease
+        </h1>
+        <p class="hero-desc animate-in delay-2">
+          A professional pixel art workstation built for artists who demand precision. 
+          Per-tool memory, symmetry modes, layers, and buttery-smooth zoom.
+        </p>
+        <div class="hero-actions animate-in delay-3">
+          <a href="#download" class="btn btn-primary btn-large">
+            <span>Download for Windows</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="#features" class="btn btn-ghost btn-large">
+            <span>Explore Features</span>
+          </a>
+        </div>
+        <div class="hero-stats animate-in delay-4">
+          <div class="stat-item">
+            <span class="stat-value">256x</span>
+            <span class="stat-label">Max Zoom</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-value">0ms</span>
+            <span class="stat-label">Input Lag</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-value">∞</span>
+            <span class="stat-label">Layers</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual animate-in delay-2">
+        <div class="app-preview">
+          <div class="preview-header">
+            <div class="window-controls">
+              <span class="control close"></span>
+              <span class="control minimize"></span>
+              <span class="control maximize"></span>
+            </div>
+            <span class="preview-title">pixel_art_studio.exe</span>
+          </div>
+          <div class="preview-content">
+            <div class="toolbar">
+              <div class="tool active">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 3a2.85 2.85 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/>
+                </svg>
+              </div>
+              <div class="tool">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M20.71 5.63l-2.34-2.34a1 1 0 0 0-1.41 0l-12 12a1 1 0 0 0 0 1.41l2.34 2.34a1 1 0 0 0 1.41 0l12-12a1 1 0 0 0 0-1.41z"/>
+                  <path d="M8 4H4v4"/>
+                </svg>
+              </div>
+              <div class="tool">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                </svg>
+              </div>
+              <div class="tool">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="3" width="18" height="18" rx="2"/>
+                </svg>
+              </div>
+            </div>
+            <div class="canvas-area">
+              <div class="pixel-grid">
+                <div class="pixel" style="--x: 2; --y: 1; background: #7c3aed;"></div>
+                <div class="pixel" style="--x: 3; --y: 1; background: #7c3aed;"></div>
+                <div class="pixel" style="--x: 4; --y: 1; background: #7c3aed;"></div>
+                <div class="pixel" style="--x: 5; --y: 1; background: #7c3aed;"></div>
+                <div class="pixel" style="--x: 1; --y: 2; background: #7c3aed;"></div>
+                <div class="pixel" style="--x: 2; --y: 2; background: #a78bfa;"></div>
+                <div class="pixel" style="--x: 3; --y: 2; background: #a78bfa;"></div>
+                <div class="pixel" style="--x: 4; --y: 2; background: #a78bfa;"></div>
+                <div class="pixel" style="--x: 5; --y: 2; background: #a78bfa;"></div>
+                <div class="pixel" style="--x: 6; --y: 2; background: #7c3aed;"></div>
+                <div class="pixel" style="--x: 1; --y: 3; background: #7c3aed;"></div>
+                <div class="pixel" style="--x: 2; --y: 3; background: #a78bfa;"></div>
+                <div class="pixel" style="--x: 3; --y: 3; background: #c4b5fd;"></div>
+                <div class="pixel" style="--x: 4; --y: 3; background: #c4b5fd;"></div>
+                <div class="pixel" style="--x: 5; --y: 3; background: #a78bfa;"></div>
+                <div class="pixel" style="--x: 6; --y: 3; background: #7c3aed;"></div>
+                <div class="pixel" style="--x: 1; --y: 4; background: #7c3aed;"></div>
+                <div class="pixel" style="--x: 2; --y: 4; background: #a78bfa;"></div>
+                <div class="pixel" style="--x: 3; --y: 4; background: #c4b5fd;"></div>
+                <div class="pixel" style="--x: 4; --y: 4; background: #c4b5fd;"></div>
+                <div class="pixel" style="--x: 5; --y: 4; background: #a78bfa;"></div>
+                <div class="pixel" style="--x: 6; --y: 4; background: #7c3aed;"></div>
+                <div class="pixel" style="--x: 1; --y: 5; background: #7c3aed;"></div>
+                <div class="pixel" style="--x: 2; --y: 5; background: #a78bfa;"></div>
+                <div class="pixel" style="--x: 3; --y: 5; background: #a78bfa;"></div>
+                <div class="pixel" style="--x: 4; --y: 5; background: #a78bfa;"></div>
+                <div class="pixel" style="--x: 5; --y: 5; background: #a78bfa;"></div>
+                <div class="pixel" style="--x: 6; --y: 5; background: #7c3aed;"></div>
+                <div class="pixel" style="--x: 2; --y: 6; background: #7c3aed;"></div>
+                <div class="pixel" style="--x: 3; --y: 6; background: #7c3aed;"></div>
+                <div class="pixel" style="--x: 4; --y: 6; background: #7c3aed;"></div>
+                <div class="pixel" style="--x: 5; --y: 6; background: #7c3aed;"></div>
+              </div>
+            </div>
+            <div class="layers-panel">
+              <div class="panel-title">Layers</div>
+              <div class="layer active">
+                <span class="layer-visibility">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                    <circle cx="12" cy="12" r="3"/>
+                  </svg>
+                </span>
+                <span>Layer 1</span>
+              </div>
+              <div class="layer">
+                <span class="layer-visibility">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                    <circle cx="12" cy="12" r="3"/>
+                  </svg>
+                </span>
+                <span>Background</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="floating-card card-1">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+            <path d="M2 17l10 5 10-5"/>
+            <path d="M2 12l10 5 10-5"/>
+          </svg>
+          <span>Layers</span>
+        </div>
+        <div class="floating-card card-2">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M12 2v20M2 12h20"/>
+          </svg>
+          <span>Symmetry</span>
+        </div>
+        <div class="floating-card card-3">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+            <polyline points="14 2 14 8 20 8"/>
+            <path d="M12 18v-6"/>
+            <path d="M9 15l3 3 3-3"/>
+          </svg>
+          <span>Export PNG</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section features">
+      <div class="section-header">
+        <span class="section-badge">Features</span>
+        <h2>Everything you need.<br/><span class="gradient-text">Nothing you don't.</span></h2>
+        <p>Carefully crafted tools for pixel artists who value precision and speed.</p>
+      </div>
+      <div class="features-grid">
+        <article class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M17 3a2.85 2.85 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/>
+            </svg>
+          </div>
+          <h3>Per-Tool Memory</h3>
+          <p>Each tool remembers its own brush size, opacity, flow, and hardness. Switch freely without losing your settings.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+              <path d="M2 17l10 5 10-5"/>
+              <path d="M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <h3>Layer System</h3>
+          <p>Add, reorder, duplicate, merge, and flatten layers. Individual opacity controls keep your workflow organized.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 2v20"/>
+              <path d="M2 12h20"/>
+            </svg>
+          </div>
+          <h3>Symmetry Modes</h3>
+          <p>Horizontal, vertical, or both. Mirror your strokes automatically for perfectly balanced sprites.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="11" cy="11" r="8"/>
+              <path d="m21 21-4.35-4.35"/>
+              <path d="M11 8v6"/>
+              <path d="M8 11h6"/>
+            </svg>
+          </div>
+          <h3>256x Zoom</h3>
+          <p>Scroll to zoom up to 256x with smart clipping for lag-free redraws. Pan smoothly with middle-drag.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="3" y="3" width="18" height="18" rx="2"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <path d="m21 15-5-5L5 21"/>
+            </svg>
+          </div>
+          <h3>Precision Shapes</h3>
+          <p>Lines, rectangles, and circles with live previews. Switch to fill mode for instant region recolors.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <path d="M12 18v-6"/>
+              <path d="M9 15l3 3 3-3"/>
+            </svg>
+          </div>
+          <h3>Export Ready</h3>
+          <p>PNG export with scale multiplier. Preserve transparency with no artifacts. Perfect for sprites and icons.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="workflow" class="section workflow">
+      <div class="section-header">
+        <span class="section-badge">Workflow</span>
+        <h2>From concept to export<br/><span class="gradient-text">in minutes.</span></h2>
+        <p>A streamlined process designed for speed without sacrificing quality.</p>
+      </div>
+      <div class="workflow-steps">
+        <div class="workflow-line"></div>
+        <div class="step-card">
+          <div class="step-number">01</div>
+          <div class="step-content">
+            <h3>Block in Shapes</h3>
+            <p>Use Pencil and Line tools with symmetry enabled to rough out silhouettes. The grid overlay keeps everything aligned.</p>
+          </div>
+        </div>
+        <div class="step-card">
+          <div class="step-number">02</div>
+          <div class="step-content">
+            <h3>Detail & Shade</h3>
+            <p>Switch tools freely—each remembers its brush profile. Refine edges and add shading with confidence.</p>
+          </div>
+        </div>
+        <div class="step-card">
+          <div class="step-number">03</div>
+          <div class="step-content">
+            <h3>Export at Scale</h3>
+            <p>Choose your scale factor and export to PNG. Your layers stay intact in project saves while exports stay crisp.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="download" class="section download">
+      <div class="download-wrapper">
+        <div class="download-glow"></div>
+        <div class="download-card">
+          <div class="download-content">
+            <span class="section-badge">Download</span>
+            <h2>Ready to create?</h2>
+            <p>Get Pixel Art Studio for Windows. One portable EXE, no installer required.</p>
+            <div class="download-meta">
+              <div class="meta-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2"/>
+                  <path d="M8 21h8"/>
+                  <path d="M12 17v4"/>
+                </svg>
+                <span>Windows 10/11</span>
+              </div>
+              <div class="meta-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/>
+                  <polyline points="13 2 13 9 20 9"/>
+                </svg>
+                <span>Portable EXE</span>
+              </div>
+              <div class="meta-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+                <span>No Installer</span>
+              </div>
+            </div>
+          </div>
+          <div class="download-action">
+            <a href="/pixel_art_studio_new.exe" download class="btn btn-primary btn-xl">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="7 10 12 15 17 10"/>
+                <line x1="12" y1="15" x2="12" y2="3"/>
+              </svg>
+              <span>Download Now</span>
+            </a>
+            <span class="download-note">Free forever. No account required.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section faq">
+      <div class="section-header">
+        <span class="section-badge">FAQ</span>
+        <h2>Got questions?</h2>
+        <p>Here are answers to the most common ones.</p>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3>Does it support layers?</h3>
+          <p>Yes! Add, reorder, duplicate, merge, and flatten layers with individual opacity controls.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can I customize brush settings per tool?</h3>
+          <p>Each tool remembers its own size, opacity, flow, and hardness—restored with smooth transitions.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How do I export my artwork?</h3>
+          <p>Use Export PNG, set a scale factor, and save. Transparency is fully preserved.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What symmetry options are available?</h3>
+          <p>Horizontal, vertical, or both—perfect for character sprites and UI elements.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Is it really free?</h3>
+          <p>Absolutely. No trials, no subscriptions, no hidden costs. Just download and create.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Do I need to install anything?</h3>
+          <p>Nope! It's a portable EXE. Just download, double-click, and you're ready to go.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <div class="logo">
+          <div class="logo-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="7" height="7" rx="1"/>
+              <rect x="14" y="3" width="7" height="7" rx="1"/>
+              <rect x="3" y="14" width="7" height="7" rx="1"/>
+              <rect x="14" y="14" width="7" height="7" rx="1"/>
+            </svg>
+          </div>
+          <span>Pixel Art Studio</span>
+        </div>
+        <p>Crafted for precise pixel workflows.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#hero">Home</a>
+        <a href="#features">Features</a>
+        <a href="#workflow">Workflow</a>
+        <a href="#download">Download</a>
+        <a href="#faq">FAQ</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 Pixel Art Studio. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
