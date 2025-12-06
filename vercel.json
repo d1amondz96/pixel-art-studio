@@ -1,7 +1,7 @@
 {
   "version": 2,
   "builds": [{ "src": "website/**", "use": "@vercel/static" }],
-  "routes": [{ "src": "/(.*)", "dest": "/website/$1" }],
+  "rewrites": [{ "source": "/(.*)", "destination": "/website/$1" }],
   "headers": [
     {
       "source": "/icon.ico",
